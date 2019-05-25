@@ -9,12 +9,12 @@ def generate_name():
     name_letters = [first_letter]
     letters = 0
     while letters < name_length:
-        if name_letters[letters] in string_vowel:
-            add_letter = random.choice(string_consonant)
+        if name_letters[letters] in string_VOWEL:
+            add_letter = random.choice(string_CONSONANT)
             name_letters.append(add_letter)
             letters = letters + 1
         else:
-            add_letter = random.choice(string_vowel)
+            add_letter = random.choice(string_VOWEL)
             name_letters.append(add_letter)
             letters = letters + 1
     name = "".join(name_letters)
